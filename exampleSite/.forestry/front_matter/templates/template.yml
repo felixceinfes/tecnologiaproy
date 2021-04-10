@@ -1,0 +1,21 @@
+---
+label: Template
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: datetime
+  name: lastmod
+  label: lastmod
+- type: number
+  name: weight
+  label: weight
+- type: list
+  name: keywords
+  label: keywords
+pages:
+- exampleSite/content/temada/temavi/tema-d.a.vi.md

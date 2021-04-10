@@ -1,0 +1,25 @@
+{{ define "main" }}
+
+{{ "<!-- contact -->" | safeHTML }}
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="section-title text-primary">{{ .Title }}</h2>
+        {{ .Content }}
+        <form action="{{ .Site.Params.contact_form_action | safeURL }}" method="POST">
+          <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="form-control mb-4 shadow rounded-0">
+          <input type="email" id="correo" name="correo" placeholder="Correo" class="form-control mb-4 shadow rounded-0">
+          <input type="text" id="asunto" name="asunto" placeholder="Asunto"
+            class="form-control mb-4 shadow rounded-0">
+          <textarea name="mensaje" id="mensaje" placeholder="Mensaje"
+            class="form-control mb-4 shadow rounded-0"></textarea>
+          <button type="submit" value="send" class="btn btn-primary">{{ i18n "send" }}</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+{{ "<!-- /contact -->" | safeHTML }}
+
+{{ end }}

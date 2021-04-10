@@ -1,0 +1,79 @@
+baseURL = "/"
+disableLanguages = []
+googleAnalytics = ""
+theme = "mesa-a"
+themesDir = "../.."
+title = "Mesa de servicio"
+[Languages.en]
+copyright = "Copyright © 2020 a Hugo theme by [Gethugothemes](https://gethugothemes.com/)"
+languageCode = "en-us"
+languageName = "En"
+parent = ""
+weight = 1
+[[Languages.en.menu.main]]
+name = ""
+parent = ""
+url = ""
+weight = ""
+hasChildren = true
+[[Languages.en.menu.main]]
+name = "Inicio"
+parent = ""
+url = "/"
+weight = 1
+[[Languages.en.menu.main]]
+name = "Tema B"
+url = "faq"
+weight = 2
+[[Languages.en.menu.main]]
+name = "Tema C"
+url = "contact"
+weight = 3
+[[Languages.en.menu.main]]
+### Tema D
+hasChildren = true
+name = "Tema D"
+weight = 4
+[[Languages.en.menu.main]]
+name = "Subtema D.A"
+parent = "Tema D"
+url = "temada"
+weight = 1
+[[Languages.en.menu.main]]
+name = "Subtema D.B"
+parent = "Tema D"
+url = "temadb"
+weight = 2
+[[Languages.en.menu.main]]
+name = "Subtema D.C"
+parent = "Tema D"
+url = "temadc"
+weight = "3"
+[Languages.en.params.banner]
+bg_image = "images/banner.jpg"
+placeholder = "Si tiene alguna duda, solo escriba la consulta."
+subtitle = "Obtenga respuestas a travéz del buscador"
+title = "Centro de soporte"
+[Languages.en.params.cta]
+content = "Escribanos un mensaje y nos comunicaremos pronto."
+enable = true
+title = "¿No encontró una solución al problema?"
+[Languages.en.params.cta.button]
+enable = true
+label = "Contáctenos"
+link = "contact"
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[params]
+body_color = "#f9f9f9"
+contact_form_action = "https://formspree.io/f/xoqprael"
+font_family = "lato"
+light_color = "#f8f9fa"
+logo = "images/logo-enlazaa.png"
+logo_white = ""
+primary_color = "#02007e"
+text_color = "#636363"
+text_color_dark = "#242738"
+white_color = "#ffffff"
